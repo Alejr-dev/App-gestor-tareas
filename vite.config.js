@@ -1,5 +1,9 @@
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import path from 'path';
+
 export default defineConfig({
-  base: '/',  // Si se despliega directamente en el dominio raíz
+  base: '/app-gestor-tareas/',
   plugins: [vue()],
   resolve: {
     alias: {
@@ -7,4 +11,3 @@ export default defineConfig({
     },
   },
 });
-
